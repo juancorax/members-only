@@ -11,7 +11,7 @@
       <%= post.body %><br>
 
       <% if user_signed_in? %>
-        <%= post.user_id %>
+        <%= post.author %>
       <% end %>
     </li>
   <% end %>

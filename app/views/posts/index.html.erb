@@ -9,7 +9,10 @@
     <li>
       <%= post.title %><br>
       <%= post.body %><br>
-      <%= post.user_id %>
+
+      <% if user_signed_in? %>
+        <%= post.user_id %>
+      <% end %>
     </li>
   <% end %>
 </ul>

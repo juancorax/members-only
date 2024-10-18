@@ -8,6 +8,8 @@
   <% @post.each do |post| %>
     <li>
       <%= post.title %><br>
+      <%= post.body %><br>
+      <%= post.user_id %>
     </li>
   <% end %>
 </ul>
